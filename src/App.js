@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.scss';
 import Board from './components/Board';
 import Card from './components/Card';
@@ -9,7 +8,6 @@ import { v4 as uuid } from 'uuid';
 
 function App() {
 
-  let i = 0;
   const [{ open, progress, completed }, dispatch] = useStateValue()
   const { register, handleSubmit, reset } = useForm()
 

@@ -2,6 +2,7 @@ import './Card.scss'
 import { useStateValue } from '../StateProvider'
 
 function Card({ id, title, desc, time }) {
+  // eslint-disable-next-line
   const [{ }, dispatch] = useStateValue()
 
   const toOpen = e => {

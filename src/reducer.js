@@ -26,6 +26,7 @@ const reducer = (state, action) => {
       })
 
     case "REMOVE_FROM_CURRENT":
+      // eslint-disable-next-line
       switch (action.payload.currentBoardID) {
         case "board-1": {
           const index = state.open.findIndex((task) => (task.id === action.payload.taskID))
@@ -46,6 +47,7 @@ const reducer = (state, action) => {
           })
         }
       }
+      break;
 
     default:
       return state;
