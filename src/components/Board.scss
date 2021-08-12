@@ -1,0 +1,14 @@
+.board {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #F0F0F0;
+  padding: 0.8rem;
+  margin: 0.5rem;
+  min-width: 15rem;
+  height: 90vh;
+  min-height: 25rem;
+
+  &>h3 {
+    margin: 0 0 1rem 0;
+  }
+}
